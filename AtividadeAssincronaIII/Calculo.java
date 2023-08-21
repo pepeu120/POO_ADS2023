@@ -1,7 +1,7 @@
 public class Calculo {
     private float salarioTotal = 0f;
 
-    public float getSalarioTotal() {
+    public float getSalarioToal() {
         return this.salarioTotal;
     }
 
