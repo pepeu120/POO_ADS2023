@@ -1,3 +1,5 @@
+package estudoDirigidoPraticoI;
+
 import java.util.Scanner;
 
 public class B {

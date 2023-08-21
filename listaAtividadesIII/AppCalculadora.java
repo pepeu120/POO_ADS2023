@@ -1,3 +1,5 @@
+package listaAtividadesIII;
+
 import java.util.Scanner;
 
 public class AppCalculadora {

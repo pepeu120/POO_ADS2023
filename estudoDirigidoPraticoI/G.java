@@ -1,3 +1,5 @@
+package estudoDirigidoPraticoI;
+
 import java.util.Random;
 //import java.util.Arrays;
 

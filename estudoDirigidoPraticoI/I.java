@@ -1,3 +1,5 @@
+package estudoDirigidoPraticoI;
+
 import java.util.Random;
 
 public class I {

@@ -1,3 +1,5 @@
+package listaAtividadesIII;
+
 public class AppProfessor {
     public static void main(String[] args) {
         String[] disciplinas = {"Matemática", "Física"};
