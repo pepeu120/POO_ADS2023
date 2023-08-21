@@ -2,13 +2,9 @@ import java.time.LocalDate;
 
 public class Funcionario {
     String nome, cpf, rg;
-
     private int matricula, horasTrabalhadas;
-
     private float salarioBase;
-
-    final float salario = 0;
-
+    private float salario;
     LocalDate dataContratacao;
 
     private static int geraMatricula = 0;
@@ -17,14 +13,13 @@ public class Funcionario {
         this.nome = nome;
         this.horasTrabalhadas = horasTrabalhadas;
         this.salarioBase = salarioBase;
+
         this.dataContratacao = LocalDate.now();
         this.matricula = ++geraMatricula;
-    }
-
-    void calculaSalario() {
+    
         Calculo calculo = new Calculo();
         calculo.calculaSalario(salarioBase, horasTrabalhadas);
-        this.salario = getSalarioTotal();
+        this.salario = calculo.getSalarioTotal();
     }
 
     void imprimeDados() {
