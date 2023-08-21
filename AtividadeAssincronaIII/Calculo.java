@@ -1,3 +1,5 @@
+package atividadeAssincronaIII;
+
 public class Calculo {
     private float salarioTotal;
 
