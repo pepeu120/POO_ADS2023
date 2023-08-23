@@ -1,6 +1,6 @@
 package listaExercicioVI;
 
-// Foi pedido para que não usar "abstract"
+// Foi pedido para não usar "abstract"
 public class Publicacao {
     private String titulo, autor, genero, editora;
     private int anoPublicacao, qtdDisponivel;
@@ -39,11 +39,16 @@ public class Publicacao {
         this.editora = editora;
         this.anoPublicacao = anoPublicacao;
         this.qtdDisponivel = qtdDisponivel;
-}
+    }
 
-    public void imprimirDados(){
-        System.out.println("Titulo: "+getTitulo() + "\nAutor: "+getAutor() +"\nGênero: "+getGenero()+
-            "\nEditora: "+getEditora()+"\nAno de publicação: "+getAnoPublicacao()+
-            "\nQuantidade disponivel: "+getQtdDisponivel());
+    public void imprimeDados() {
+        System.out.printf("""
+                Titulo: %s
+                Autor: %s
+                Genero: %s
+                Editora: %s
+                Ano de publicação: %d
+                Quantidade disponivel: %d
+                """, getTitulo(), getAutor(), getGenero(), getEditora(), getAnoPublicacao(), getQtdDisponivel());
     };
 }
