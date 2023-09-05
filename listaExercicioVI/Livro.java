@@ -19,11 +19,16 @@ public class Livro extends Publicacao {
         this.isbn = isbn;
     }
 
-    public void imprimeDados(){
-        super.imprimeDados();
+    public void imprimeDados() {
         System.out.printf("""
-                Edição: %d
-                ISBN: %s
-                """, getEdicao(), getIsbn());
+            Titulo: %s
+            Autor: %s
+            Genero: %s
+            Editora: %s
+            Ano de publicação: %d
+            Quantidade disponivel: %d
+            Edição: %d
+            ISBN: %s
+            """, getTitulo(), getAutor(), getGenero(), getEditora(), getAnoPublicacao(), getQtdDisponivel(), getEdicao(), getIsbn());
     }
 }

@@ -1,7 +1,7 @@
 package listaExercicioVI;
 
 // Foi pedido para não usar "abstract"
-public class Publicacao {
+public abstract class Publicacao {
     private String titulo, autor, genero, editora;
     private int anoPublicacao, qtdDisponivel;
 
@@ -41,14 +41,5 @@ public class Publicacao {
         this.qtdDisponivel = qtdDisponivel;
     }
 
-    public void imprimeDados() {
-        System.out.printf("""
-                Titulo: %s
-                Autor: %s
-                Genero: %s
-                Editora: %s
-                Ano de publicação: %d
-                Quantidade disponivel: %d
-                """, getTitulo(), getAutor(), getGenero(), getEditora(), getAnoPublicacao(), getQtdDisponivel());
-    };
+    public abstract void imprimeDados();
 }

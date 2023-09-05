@@ -30,12 +30,17 @@ public class Filme extends Publicacao {
     }
 
     public void imprimeDados() {
-        super.imprimeDados();
         System.out.printf("""
-                Diretor: %s
-                Ator Principal: %s
-                Sinopse: %s
-                Duração do filme: %d minutos
-                """, getDiretor(), getAtorPrincipal(), getSinopse(), getDuracaoFilmeMinutos());
+            Titulo: %s
+            Autor: %s
+            Genero: %s
+            Editora: %s
+            Ano de publicação: %d
+            Quantidade disponivel: %d
+            Diretor: %s
+            Ator Principal: %s
+            Sinopse: %s
+            Duração do filme: %d minutos
+            """, getTitulo(), getAutor(), getGenero(), getEditora(), getAnoPublicacao(), getQtdDisponivel(), getDiretor(), getAtorPrincipal(), getSinopse(), getDuracaoFilmeMinutos());
     }
 }
