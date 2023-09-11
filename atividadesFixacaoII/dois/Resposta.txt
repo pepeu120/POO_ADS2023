@@ -1,0 +1,20 @@
+2 Considere os métodos abaixo. Indique se está sendo utilizada sobrecarga de método
+ou sobrescrita. Explique e diga com que outro método esta sendo realizada a sobrecarga
+ou sobrescrita (se for o caso).
+public class A {
+...
+public A() { ... }
+public A( int x ) { ... }
+public void m1() { ... }
+public void m1( int h ) { ... }
+}
+public class B extends A {
+...public B() { ... }
+public void m1() { ... }
+public void m1( double x, double y ) { ... }
+public void m2() { ... }
+}
+2.1 Quais métodos realizam sobrescrita? Por quê?
+    Apenas o metodo B.m1(), pois o mesmo metodo, com a mesma assinatura, foi implementado na super classe.
+2.2 Quais métodos realizam sobrecarga? Por quê?
+    A.m1() e B.m1(), pois possuem o mesmo nome, mas com assinaturas diferentes.

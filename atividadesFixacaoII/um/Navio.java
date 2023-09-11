@@ -1,4 +1,4 @@
-package atividadesFixacaoII;
+package atividadesFixacaoII.um;
 
 public class Navio extends Brinquedo {
     public void mover() {
